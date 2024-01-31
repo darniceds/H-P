@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .logo-container {
+            margin-left: -1200px; /* Shift the logo to the left */
+            margin-bottom: 30px; /* Increase margin bottom for space */
+        }
+        body {
+            margin: 80px 0 0; /* Shift body text downwards */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffffff; /* Change background color */
+        }
+        
+        .centered-links {
+            margin-bottom: 40px; /* Increase margin for space */
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px; /* Add padding to the container */
+            box-sizing: border-box;
+            text-align: left;
+        }
+        .left-column {
+            width: 40%;
+        }
+        .right-column {
+            width: 55%;
+        }
+        h1 {
+            margin-top: 100;
+        }
+        p {
+            margin-top: 100;
+            margin-bottom: 30px; /* Increase margin bottom for space */
+        }
+        .vertical-list li {
+            margin-bottom: 10px; /* Add space between list items */
+        
+        /* Style the links to appear as normal text */
+        .list2 a {
+            text-decoration: none;
+            color: #cc0d0d; /* Change color to match regular text */
+            cursor: pointer; /* Change cursor on hover */
+            margin-bottom: 100px; /* Add space between list items */
+      
+        /* Slideshow CSS */
+        .slideshow-container {
+            width: 100%; /* Make the slideshow container span the width of the page */
+            position: relative;
+            margin: auto;
+            margin-top: 20px; /* Adjust as needed */
+        }
+        .slideshow-container img {
+            width: 100%; /* Make the slideshow images span the width of the container */
+            display: none;
+        }
+        .slideshow-container img:first-child {
+            display: block;
+        }
+    </style>
+    <title>www.huping.de</title>
+</head>
+<body>
+    
+    <div class="centered-links">
+        <ul class="list1">
+            <img src="https://www.huping.de/user/themes/scribble/assets/images/icon-phone.png"><a>+49 (0) 241 44 50 30</a>
+            <img src="https://www.huping.de/user/themes/scribble/assets/images/icon-mail.png"><a>info@huping.de</a>
+            <img src="https://www.huping.de/user/themes/scribble/assets/images/icon-arrow.png"><a>How to find us</a>
+            <img src="https://www.huping.de/user/themes/scribble/assets/images/icon-marker.png"><a>Our Locations</a>
+            <img src="https://www.huping.de/user/themes/scribble/assets/images/icon-world.png"><a>Language</a>
+        </ul>
+    </div>
+    <div class="logo-container">
+        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\H+P website project\H+P logo.png" alt="Logo">
+    </div> <!-- Close logo-container -->
+    <div class="centered-links"> <!-- Fix class name -->
+        <ul class="list2"> <!-- Fix class name -->
+            <a>Home</a>
+            <a>H+P</a>
+            <a>Building Construction</a>
+            <a>Structural Engineering</a>
+            <a>Expert Opinions</a>
+            <a>Team</a>
+            <a>Career</a>
+            <a>News</a>
+        </ul>
+    </div> <!-- Close centered-links -->
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\H+P website project\SlidePhoto1.jpg" alt="Slide 1">
+        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\H+P website project\SlidePhoto2.jpg" alt="Slide 2">
+        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\H+P website project\SlidePhoto3.jpg" alt="Slide 3">
+        <img src="C:\Users\Marie\Desktop\BeCode\Digital Sprint\H+P website project\SlidePhoto4.jpg" alt="Slide 4">
+        <script>
+            // JavaScript for slideshow functionality
+            let slideIndex = 0;
+            carousel();
+        
+            function carousel() {
+                let i;
+                const slides = document.querySelectorAll('.slideshow-container img');
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = 'none';
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                }
+                slides[slideIndex - 1].style.display = 'block';
+                setTimeout(carousel, 2000); // Change image every 2 seconds (2000 milliseconds)
+            }
+        </script>
+        
+    </div>
+
+    <div class="container">
+        <div class="left-column">
+            <h1>H+P Ingenieure Offers High-Quality Solutions in the Field of Structural Engineering</h1>
+        </div>
+        <div class="right-column">
+            <p>H+P Ingenieure is a high-performing, efficient company of engineering consultants offering high-quality solutions in the field of structural analysis for all areas of structural and building construction engineering. We are a reliable partner for certified checking of structural calculations, structural design, expert opinions and the supervision of licensing procedures, providing our clients with a comprehensive range of tailor-made, technically superior and competitive services:</p>
+            <ul class="vertical-list">
+                <li>Structural design: Structural calculations and execution planning</li>
+                <li>Checking of structural calculations as “Prüfingenieure für Baustatik” / certified experts/ test engineers for structural analysis: Independent proofing based on the four-eyes principle, certification of structural stability, monitoring the execution of construction work</li>
+                <li>Expert opinions: Licensing reports, claim/damage reports, construction/building inspection, court-appointed expert opinions</li>
+                <li>Supervision of licensing procedures: Finite element simulations, experimental investigations on structural members</li>
+                <li>Construction/building inspection: Concrete, steel, timber testing</li>
+            </ul>
+            <p>From structural concrete to steel design, timber engineering, glass and lightweight construction as well as innovative composite construction methods, we provide sound and solid expertise that is also highly valued for the development of standards and guidelines. Our team includes six “Prüfingenieure für Baustatik”, i.e. certified experts/test engineers for structural analysis, for all fields of construction as well as three accredited “EBA” test experts for railway bridges. As certified experts/ test engineers for structural analysis, we systematically exploit the opportunities afforded by digitalisation, relying increasingly on digital methods.</p>
+        </div>
+    </div>
+<hr>
+<table style="width:100%">
+    <tr>
+      <th><strong>Aachen</strong></th>
+      <th><strong>Düsseldorf</strong></th>
+      <th><strong>München</strong></th>
+      <th><strong>Köln</strong></th>
+      <th><strong>Münster</strong></th>
+      <th><strong>Darnstadt</strong></th>
+
+    </tr>
+    <tr>
+      <td>Kackertstraße 10</td>
+      <td>Grafenberger Allee 293</td>
+      <td>Aschauer Straße 10</td>
+      <td>Neuenhöfer Allee 49-51</td>
+      <td>Lublinring 12</td>
+      <td>Birkenweg 24</td>
+    </tr>
+
+    <tr>
+        <td>D - 52072 Aachen</td>
+        <td>D - 40237 Düsseldorf</td>
+        <td>D - 81549 München</td>
+        <td>D - 50935 Köln</td>
+        <td>D - 48147 Münster</td>
+        <td>D – 64295 Darmstadt</td>
+      </tr>
+
+      
+    <tr>
+        <td>+49 (0) 2 41 · 44 50 30</td>
+        <td>+49 (0) 2 11 · 61 02 101</td>
+        <td>+49 (0) 89 · 12 47 05 930</td>
+        <td>+49 (0) 2 21 · 94 10 977</td>
+        <td>+49 (0) 251 · 39 58 04 34</td>
+        <td>+49 (0) 6151 · 36 65 0t</td>
+      </tr>
+    
+    
+  </table>
+</body>
+</html>  
+    
